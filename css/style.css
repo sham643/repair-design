@@ -388,9 +388,12 @@ img {
   align-items: center; }
 
 .logo {
-  font-size: 1.075rem;
+  font-size: 1rem;
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: Futura Demi;
+  font-weight: 500;
+  line-height: 16px; }
 
 .nav__item {
   color: #fff;
