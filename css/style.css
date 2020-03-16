@@ -548,6 +548,24 @@ img {
   left: 0;
   bottom: -1.79rem; }
 
+.design__description {
+  display: flex;
+  justify-content: center; }
+
+.description__text {
+  font-family: Futura Book;
+  font-size: 1.43rem;
+  line-height: 1.92rem;
+  text-align: center;
+  color: #363636;
+  margin-bottom: 3.4rem; }
+
+.card__pricetag--design {
+  padding: 1.214rem 5.9rem 1.214rem 2.7rem; }
+
+.card__title--design {
+  margin-bottom: 0.6rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -569,7 +587,9 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .design__card {
+    margin-bottom: 5.66rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
