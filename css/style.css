@@ -414,6 +414,20 @@ img {
         background-color: #E3B873;
         margin: 0px 10px; }
 
+body {
+  margin: 0; }
+
+.videofon {
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+  display: table; }
+
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff; }
+
 .header {
   position: fixed;
   left: 0;
