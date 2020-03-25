@@ -46,6 +46,9 @@ $(document).ready(function() {
       userEmail: {
         required: true,
         email: true
+      },
+      userQuestion: {
+        required:true
       }
     },
     messages: {
@@ -53,10 +56,93 @@ $(document).ready(function() {
         required: "Имя обязательно",
         minlength: "Имя не короче двух букв"
       },
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Телефон обязателен"
+      },
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате name@domain.com"
+      },
+      userQuestion: {
+        required: "Обязательно укажите вопрос"
+      }
+    }
+  });
+
+  //маска для номера телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userQuestion: {
+        required:true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: {
+        required: "Телефон обязателен"
+      },
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате name@domain.com"
+      },
+      userQuestion: {
+        required: "Обязательно укажите вопрос"
+      }
+    }
+  });
+
+  //маска для номера телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userQuestion: {
+        required:true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: {
+        required: "Телефон обязателен"
+      },
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате name@domain.com"
+      },
+      userQuestion: {
+        required: "Обязательно укажите вопрос"
       }
     }
   });
