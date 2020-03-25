@@ -369,7 +369,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -378,6 +379,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 .container {
   width: 85%;
@@ -743,9 +746,11 @@ img {
   left: 0;
   bottom: -1.79rem; }
 
-.design__description {
-  display: flex;
-  justify-content: center; }
+.design {
+  padding-bottom: 30rem; }
+  .design__description {
+    display: flex;
+    justify-content: center; }
 
 .description__text {
   font-family: Futura Book;
@@ -760,6 +765,51 @@ img {
 
 .card__title--design {
   margin-bottom: 0.6rem; }
+
+.footer {
+  background: #131313 url(../img/footer-bg.jpg) no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background: #181818 url(../img/bg-lines.svg) no-repeat center;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -20rem;
+    margin-bottom: 3.714rem;
+    padding: 2.5rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
 
 .modal {
   opacity: 0;
@@ -878,7 +928,24 @@ img {
   .control__policy {
     margin-bottom: 62px; }
     .control__policy__label {
-      justify-content: flex-start; } }
+      justify-content: flex-start; }
+  .footer {
+    background: #252525; }
+    .footer__wrap {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      min-width: 100%;
+      background: #252525; }
+    .footer__container {
+      min-width: 100%; }
+    .footer__input-group {
+      flex-basis: 100%; }
+    .footer__button {
+      padding: 1.285rem 48%;
+      margin-left: -7%; }
+    .footer__menu {
+      display: none; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
