@@ -10,6 +10,13 @@ $(document).ready(function() {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible')
   });
+  $(document).click(function (e) {
+    if ($(e.target).is('.modal')) {
+      modal.removeClass('modal--visible');
+    }
+  });
+  
+  
 
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
@@ -39,7 +46,8 @@ $(document).ready(function() {
       // simple rule, converted to {required:true}
       userName: {
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxlength: 15
       },
       userPhone: "required",
       // compound rule
@@ -54,7 +62,8 @@ $(document).ready(function() {
     messages: {
       userName: {
         required: "Имя обязательно",
-        minlength: "Имя не короче двух букв"
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя должно содержать не более 15 букв"
       },
       userPhone: {
         required: "Телефон обязателен"
