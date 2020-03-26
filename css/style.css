@@ -399,7 +399,7 @@ input.invalid {
   justify-content: space-between; }
 
 .col-30 {
-  flex-basis: 30%; }
+  flex-basis: 31.8%; }
 
 .col-50 {
   width: 50%; }
@@ -782,7 +782,7 @@ img {
     max-width: 63.07rem;
     margin: auto;
     margin-top: -20rem;
-    margin-bottom: 3.714rem;
+    margin-bottom: 3.514rem;
     padding: 2.5rem; }
   .footer__title {
     text-transform: uppercase;
@@ -811,13 +811,49 @@ img {
         margin-bottom: 2rem; }
   .footer__policy {
     flex-basis: 100%;
-    margin-bottom: 3.6rem; }
+    margin-bottom: 3.7rem; }
   .footer__button {
     margin: auto;
-    padding: 1.285rem 4.785rem; }
+    padding: 1.285rem 4.785rem;
+    margin-right: 10.7rem; }
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    display: flex;
+    justify-content: center;
+    max-width: 66.07rem;
+    margin: auto;
+    margin-bottom: 4rem;
+    overflow: hidden; }
+  .footer__text {
+    text-align: center;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 1.657rem;
+    max-width: 39.4rem;
+    margin: auto; }
+    .footer__text--hidden {
+      display: none; }
+  .footer__contacts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.592rem;
+    margin-top: 1.857rem; }
+    .footer__contacts--hidden {
+      display: none; }
+  .footer__item {
+    margin-right: 1.07rem; }
+    .footer__item--mail {
+      margin-left: 0.7rem; }
+  .footer__bottom {
+    display: flex; }
 
 .modal {
   opacity: 0;
@@ -955,7 +991,17 @@ img {
       padding: 1.285rem 48%;
       margin-left: -7%; }
     .footer__menu {
-      display: none; } }
+      display: none; }
+    .footer__text {
+      display: none; }
+      .footer__text--hidden {
+        display: flex; }
+    .footer__contacts {
+      display: none; }
+      .footer__contacts--hidden {
+        display: flex; }
+    .footer__map {
+      max-width: 90%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
