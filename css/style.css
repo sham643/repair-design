@@ -776,7 +776,9 @@ img {
 
 .footer {
   background: #131313 url(../img/footer-bg.jpg) no-repeat center/cover;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  margin-bottom: -4rem;
+  padding-bottom: 4.1rem; }
   .footer__wrap {
     background: #181818 url(../img/bg-lines.svg) no-repeat center;
     max-width: 63.07rem;
@@ -818,7 +820,8 @@ img {
     margin-right: 10.7rem; }
   .footer__menu {
     background-color: #131313;
-    padding: 4.285rem 0; }
+    padding: 4.285rem 0;
+    min-width: 100%; }
   .footer__map {
     display: flex;
     justify-content: center;
@@ -852,8 +855,6 @@ img {
     margin-right: 1.07rem; }
     .footer__item--mail {
       margin-left: 0.7rem; }
-  .footer__bottom {
-    display: flex; }
 
 .modal {
   opacity: 0;
