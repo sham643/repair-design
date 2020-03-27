@@ -3,14 +3,14 @@
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap; }
+  font-display: swap; }
 
 @font-face {
   font-family: 'Futura Demi';
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap; }
+  font-display: swap; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -495,6 +495,14 @@ img {
 .contacts__phone {
   margin-right: 45px; }
 
+.contacts__button {
+  font-family: 'Futura Demi';
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase; }
+
 .hero {
   position: relative;
   display: flex;
@@ -536,13 +544,20 @@ img {
     margin-bottom: 3rem; }
   .hero__button {
     margin-right: 20px;
-    padding: 17px 29px; }
+    padding: 17px 29px;
+    font-family: 'FuturaDemi';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px; }
   .hero__instagram {
     max-width: 80px;
     height: 100%;
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+    font-family: 'Futura Demi';
+    font-size: 14px;
+    line-height: 16px; }
   .hero__scroll-down {
     position: absolute;
     z-index: 3;
@@ -603,6 +618,14 @@ img {
 
 .projects {
   padding-bottom: 30rem; }
+  .projects__section-title--heading {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase; }
 
 .swiper-slide {
   display: flex;
@@ -653,6 +676,12 @@ img {
   margin-bottom: 2.214rem;
   margin-top: -30rem;
   color: #fff; }
+  .control__section-title--heading {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2rem; }
 
 .control__video {
   position: relative;
@@ -773,6 +802,13 @@ img {
 
 .card__title--design {
   margin-bottom: 0.6rem; }
+
+.card__section-title--heading {
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.485rem;
+  line-height: 2rem; }
 
 .footer {
   background: #131313 url(../img/footer-bg.jpg) no-repeat center/cover;
@@ -908,6 +944,46 @@ img {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end; }
+
+.thanks {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .thanks--visible {
+    opacity: 1;
+    visibility: visible; }
+  .thanks__dialog {
+    position: relative;
+    max-width: 36.36rem;
+    background: #131313 url(../img/bg-lines.svg) no-repeat center;
+    padding: 2.357rem 3.5rem 1.928rem;
+    color: #fff; }
+  .thanks__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.357rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2.428rem; }
+  .thanks__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
 
 @media screen and (max-width: 1200px) {
   html {

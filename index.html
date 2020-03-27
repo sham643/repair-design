@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +50,7 @@
         <div class="row">
           <div class="col-50 projects__col-50">
             <div class="section-title section-title--left">
-              <h2 class="section-title__heading section-title__heading--primary">Завершенные <span class="section-title__word">проекты</span></h2>
+              <h2 class="section-title__heading section-title__heading--primary projects__section-title--heading">Завершенные <span class="section-title__word">проекты</span></h2>
               <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
             </div>
             <!-- Slider main container -->
@@ -166,7 +166,7 @@
     <section class="section control">
       <div class="container">
         <div class="section-title control__section-title section-tittle--light wow fadeInUp">
-          <h2 class="section-title__heading">Онлайн контроль</h2>
+          <h2 class="section-title__heading control__section-title--heading">Онлайн контроль</h2>
           <div class="section-title__image">
             <img src="img/video.svg" alt="video">
           </div>
@@ -178,20 +178,20 @@
         <p class="control__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже <br>чтобы получить ссылку на трансляцию.</p>
         <form action="send.php" method="POST" class="form control__form">
           <div class="control__input-group">
-            <label for="user-name" class="label form__label control__label">Имя</label>
-            <input type="text" class="input form__input control__input control__input--name" name="userName"  placeholder="Как вас зовут:">
+            <label for="control-name" class="label form__label control__label">Имя</label>
+            <input type="text" id="control-name" class="input form__input control__input control__input--name" name="userName"  placeholder="Как вас зовут:">
           </div>
           <div class="control__input-group">
-            <label for="user-phone" class="label form__label control__label">Телефон</label>
-            <input type="tel" class="input form__input control__input" name="userPhone"  placeholder="Ваш номер телефона:">
+            <label for="control-phone" class="label form__label control__label">Телефон</label>
+            <input type="tel" id="control-phone" class="input form__input control__input" name="userPhone"  placeholder="Ваш номер телефона:">
           </div>
           
 
           <!-- /.policy -->
           <button class="button button--primary control__button">Отправить</button>
             <div class="policy control__policy">
-            <input type="checkbox" name="policy-checkbox"  class="policy__checkbox" checked>
-            <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+            <input type="checkbox" id="control-policy" name="policy-checkbox"  class="policy__checkbox" checked>
+            <label for="control-policy" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
           </div>
         </form>
       </div>
@@ -207,7 +207,7 @@
         <div class="row">
           <div class="col-30 wow fadeInLeft" data-wow-delay="0.3s">
             <div class="card types__card">
-              <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
+              <img src="img/type-1.jpg" alt="Косметический ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Косметический ремонт</h3>
                 <!-- /.card_title -->
@@ -239,7 +239,7 @@
           <!-- /.col -->
           <div class="col-30 wow fadeInLeft" data-wow-delay="0.6s">
             <div class="card types__card">
-              <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
+              <img src="img/type-2.jpg" alt="Капитальный ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Капитальный ремонт</h3>
                 <!-- /.card_title -->
@@ -271,7 +271,7 @@
           <!-- /.col -->
           <div class="col-30 wow fadeInLeft" data-wow-delay="0.9s">
             <div class="card types__card">
-              <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
+              <img src="img/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Дизайнерский ремонт</h3>
                 <!-- /.card_title -->
@@ -308,7 +308,7 @@
     <section class="section design">
       <div class="container">
         <div class="section-title wow fadeInUp">
-          <h2 class="section-title__heading">дизайн проект</h2>
+          <h2 class="section-title__heading design__section-title--heading">дизайн проект</h2>
           <div class="section-title__image">
             <img src="img/tools.svg" alt="tools">
           </div>
@@ -319,7 +319,7 @@
         <div class="row">
           <div class="col-30 wow fadeInLeft" data-wow-delay="0.3s">
             <div class="card design__card">
-              <img src="img/designs/design-1.jpg" alt="Минимальный" class="design__image">
+              <img src="img/design-1.jpg" alt="Минимальный" class="design__image">
               <div class="card__text">
                 <h3 class="card__title card__title--design">Минимальный</h3>
                 <ul class="card__list">
@@ -336,7 +336,7 @@
           </div>
           <div class="col-30 wow fadeInLeft" data-wow-delay="0.6s">
             <div class="card design__card">
-              <img src="img/designs/design-2.jpg" alt="Стандартный" class="design__image">
+              <img src="img/design-2.jpg" alt="Стандартный" class="design__image">
               <div class="card__text">
                 <h3 class="card__title card__title--design">Стандартный</h3>
                 <ul class="card__list">
@@ -356,7 +356,7 @@
           </div>
           <div class="col-30 wow fadeInLeft" data-wow-delay="0.9s">
             <div class="card design__card">
-              <img src="img/designs/design-3.jpg" alt="Полный" class="design__image">
+              <img src="img/design-3.jpg" alt="Полный" class="design__image">
               <div class="card__text">
                 <h3 class="card__title card__title--design">Полный</h3>
                 <ul class="card__list">
@@ -391,20 +391,20 @@
         <h3 class="footer__title">Остались вопросы?</h3>
         <form action="send.php" method="POST" class="form footer__form">
           <div class="input-group footer__input-group"> 
-            <label for="user-name" class="label form__label label--light">Имя</label>
-            <input type="text" class="input form__input footer__input input--light" name="userName"  placeholder="Как вас зовут:"> 
+            <label for="footer-name" class="label form__label label--light">Имя</label>
+            <input type="text" id="footer-name" class="input form__input footer__input input--light" name="userName"  placeholder="Как вас зовут:"> 
           </div>
           <div class="input-group footer__input-group">
-            <label for="user-phone" class="label form__label label--light">Телефон</label>
-            <input type="tel" class="input form__input footer__input input--light" name="userPhone"  placeholder="Ваш номер телефона:">
+            <label for="footer-phone" class="label form__label label--light">Телефон</label>
+            <input type="tel" id="footer-phone" class="input form__input footer__input input--light" name="userPhone"  placeholder="Ваш номер телефона:">
           </div>
           <div class="input-group footer__input-group footer__input-group--full-width">
-            <label for="user-question" class="label form__label label--light">Вопрос</label>
-            <input type="text" class="input form__input footer__input input--light" name="userQuestion"  placeholder="Я хочу спросить:">
+            <label for="footer-question" class="label form__label label--light">Вопрос</label>
+            <input type="text" id="footer-question" class="input form__input footer__input input--light" name="userQuestion"  placeholder="Я хочу спросить:">
           </div>
           <div class="policy footer__policy">
-            <input type="checkbox" name="policy-checkbox"  class="policy__checkbox" checked>
-            <label for="policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+            <input type="checkbox" id="footer-policy" name="policy-checkbox"  class="policy__checkbox" checked>
+            <label for="footer-policy" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
           <button class="button button--primary footer__button">Отправить</button>
@@ -416,16 +416,14 @@
         <a href="*" class="footer__item"><img src="img/instagram.svg" alt="инстаграм"></a>
       </div>
       <div class="map footer__map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A666c51f796e21e4e8baa2aad670a17109118dcb2068a245e61ca60e1887c1c95&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=true"></script>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.555126231937!2d39.72099081581154!3d47.24484722089023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1585325213022!5m2!1sru!2sru" width="925" height="465" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <h3 class="footer__text footer__text--hidden">Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h3>
       <div class="footer__contacts footer__contacts--hidden">
         <a href="*" class="footer__item footer__item--mail"><img src="img/mail.svg" alt="почта"></a>
         <a href="*" class="footer__item"><img src="img/instagram.svg" alt="инстаграм"></a>
-      
+      </div>
     </div>
-
-    <!-- /.footer__menu -->
   </footer>
   <div class="footer__menu">
     <div class="container">
@@ -446,34 +444,42 @@
       </div>  
     </div>
   </div>
-  <!-- /.footer section section--dark -->
+  
   <div class="modal">
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
       <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
-          <label for="user-name" class="label form__label label--light">Имя</label>
-          <input type="text" name="userName" class="input form__input modal__input input--light"  placeholder="Как вас зовут:"> 
+          <label for="modal-name"  class="label form__label label--light">Имя</label>
+          <input type="text" id="modal-name" name="userName" class="input form__input modal__input input--light"  placeholder="Как вас зовут:"> 
         </div>
         <div class="input-group modal__input-group">
-          <label for="user-phone" class="label form__label label--light">Телефон</label>
-          <input type="tel" name="userPhone" class="input form__input modal__input input--light"  placeholder="Ваш номер телефона:">
+          <label for="modal-phone"  class="label form__label label--light">Телефон</label>
+          <input type="tel" id="modal-phone" name="userPhone" class="input form__input modal__input input--light"  placeholder="Ваш номер телефона:">
         </div>
         <div class="input-group modal__input-group">
-          <label for="user-email" class="label form__label label--light">Email</label>
-          <input type="email" name="userEmail" class="input form__input modal__input input--light"  placeholder="Ваш email:">
+          <label for="modal-email"  class="label form__label label--light">Email</label>
+          <input type="email" id="modal-email" name="userEmail" class="input form__input modal__input input--light"  placeholder="Ваш email:">
         </div>
         <div class="policy modal__policy">
-          <input type="checkbox" name="policy-checkbox"  class="policy__checkbox" checked>
-          <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+          <input type="checkbox" id="modal-policy" name="policy-checkbox"  class="policy__checkbox" checked>
+          <label for="modal-policy"  class="policy__label">Я соглашаюсь с обработкой данных</label>
+
         </div>
         <!-- /.policy -->
         <button class="button button--primary modal__button">Отправить заявку</button>
       </form>
     </div>
-    <!-- /.modal__dialog -->
   </div>
+    <div class="thanks">
+      <div class="thanks__dialog">
+        <button class="thanks__close"></button>
+        <h3 class="thanks__title">Форма отправлена, мы свяжемся с вами через 10 минут</h3>
+      </div>
+    </div>
+    <!-- /.modal__dialog -->
+  
   <!-- /.modal -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>

@@ -14,6 +14,24 @@ $(document).ready(function() {
     if ($(e.target).is('.modal')) {
       modal.removeClass('modal--visible');
     }
+ 
+  });
+
+  var thanks = $('.thanks'),
+    thanksBtn = $('[data-toggle=thanks]'),
+    thanksCloseBtn = $('.thanks__close');
+
+  thanksBtn.on('click', function () {
+    thanks.toggleClass('thanks--visible')
+  });
+  thanksCloseBtn.on('click', function () {
+    thanks.toggleClass('thanks--visible')
+  });
+  $(document).click(function (e) {
+    if ($(e.target).is('.thanks')) {
+      thanks.removeClass('thanks--visible');
+    }
+ 
   });
   
   
@@ -83,9 +101,9 @@ $(document).ready(function() {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();
           modal.removeClass('modal--visible');
+          thanks.toggleClass('thanks--visible');
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
@@ -138,8 +156,8 @@ $(document).ready(function() {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();
+          thanks.toggleClass('thanks--visible');
           
         },
         error: function (response) {
@@ -193,15 +211,17 @@ $(document).ready(function() {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();
+          thanks.toggleClass('thanks--visible');
           
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
         }
       });
-    }
+    },
+    
+
   });
 
   //маска для номера телефона
