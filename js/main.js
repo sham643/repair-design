@@ -95,7 +95,7 @@ $(document).ready(function() {
   });
 
   //маска для номера телефона
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  
 
   $('.footer__form').validate({
     errorClass: "invalid",
@@ -130,11 +130,27 @@ $(document).ready(function() {
       userQuestion: {
         required: "Обязательно укажите вопрос"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
     }
   });
 
   //маска для номера телефона
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Ваш номер телефона:"});
 
   $('.control__form').validate({
     errorClass: "invalid",
@@ -169,10 +185,26 @@ $(document).ready(function() {
       userQuestion: {
         required: "Обязательно укажите вопрос"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
     }
   });
 
   //маска для номера телефона
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+
 
 });
